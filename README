@@ -1,0 +1,28 @@
+The purpose of this little script is to reduce the time needed to configure a web domain with Nginx.
+
+First, you'll need to add  the newDomain Folder to your server running Nginx.
+It doesn't need to be a specific folder as long as the script can run bash.
+I installed it at /etc/newDomain
+
+Once you have the script in place, we need to run the following code:
+
+sudo ./new.sh mydomain.com
+This will execute new.sh and will create the configuration needed for mydomain.com.
+
+You can open new.sh and see all it does, but basically what the script does is:
+
+*Copies "template" to /sites-available/template
+*Edits the config of template for your domain
+*Creates a symbolic link between /sites-available/template and /sites-enabled/template
+*Creates directories in the /www/ folder of nginx
+*Copies index.html to the final folder of your website
+*Reloads Nginx
+
+If everything went ok, you should see your website working.
+
+
+The cool thing about this script is that is flexible. you can configurate the nginx template, 
+the files you'd like to be created when a new website is created or even what you want the script itself
+to do.
+
+I strongly advise you to try it before using it for production projects since It hasn't been tested thoughtfully.
