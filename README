@@ -25,4 +25,6 @@ The cool thing about this script is that is flexible. you can configurate the ng
 the files you'd like to be created when a new website is created or even what you want the script itself
 to do.
 
+Have in mind that this script will NOT help you with configurating DNS settings. 
+
 I strongly advise you to try it before using it for production projects since It hasn't been tested thoughtfully.
