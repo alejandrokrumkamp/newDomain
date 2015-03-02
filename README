@@ -21,7 +21,7 @@ You can open new.sh and see all it does, but basically what the script does is:
 If everything went ok, you should see your website working.
 
 
-The cool thing about this script is that is flexible. you can configurate the nginx template, 
+The cool thing about this script is that it's flexible. you can configurate the nginx template, 
 the files you'd like to be created when a new website is created or even what you want the script itself
 to do.
 
